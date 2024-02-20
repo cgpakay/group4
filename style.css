@@ -75,6 +75,11 @@ footer {
     margin: 10px 0;
 }
 
+.card-content-p3 a {
+    text-decoration: none;
+    
+}
+
 .footer-section2 {
     display: block;
     justify-content: space-between;
@@ -90,6 +95,10 @@ footer {
 .road-map {
     flex: 1;
     color: #a8a8a8;
+}
+
+.road-map a {
+    text-decoration: none;
 }
 
 .section2-mode-button {
@@ -120,8 +129,14 @@ justify-content: space-between;
     color: #a8a8a8;
 }
 
+.left-side a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
 .right-side a {
     color: #a8a8a8;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
