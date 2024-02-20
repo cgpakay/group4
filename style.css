@@ -1,10 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /* header */
+
+
+.body-top-message {
+    text-align: center;
+    padding: 10px;
+    background-color: #0171E3;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#logo-padding {
+    padding-top: 4em;
+    padding-bottom: 2em;
+}
 
 header{
 background-color:#FFFFFF ;
@@ -97,13 +116,150 @@ header .download-button{
 
 
 /* main */
-main{
 
-
+.title-text {
+    width: 60%;
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 600;
+    letter-spacing: -0.009em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: var(--label-primary-color);
+    margin-bottom: 0.5em;
 }
 
+.max-lines {
+    text-align: center;
+    position: relative;
+    display: block;
+    /* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.6em;
+}
+
+
+@media only screen and (max-width: 1068px) {
+    .title-text {
+        width: 100%;
+        font-size: 48px;
+        line-height: 1.08349;
+        letter-spacing: -0.003em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-bottom: 2em;
+    }
+}
+
+.text-grey {
+    width: 62%;
+    font-size: 23px;
+    line-height: 1.33341;
+    letter-spacing: 0.009em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #86868b;
+}
+
+@media only screen and (max-width: 1068px) {
+    .text-grey {
+        width: 100%;
+        font-size: 21px;
+        line-height: 1.381;
+        letter-spacing: 0.011em;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+}
+
+.card {
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.button-download {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(82, 148, 255);
+    transition: 0.3s;
+    border-radius: 20px;
+    border-color: #cccccc00;
+    color: white;
+    font-size: 17px;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.version-text {
+    margin-top: 0.6em;
+    font-size: 14px;
+    color: #86868b;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.computer-img{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.image-size{
+    width: 60%;
+    height: auto;
+}
+
+.note-box {
+    width: 60%;
+    margin: 1em;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F5F5F7;
+}
+
+.note-text {
+    font-size: 21px;
+    line-height: 1.381;
+    padding-left: 2em;
+    padding-right: 1em;
+    letter-spacing: 0.011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.body-bottom-div1 {
+    width: 60%;
+    margin: 2em;
+}
+
+.body-bottom-div2 {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.body-bottom-div3 {
+    width: 50%;
+    padding: 2em;
+}
+
+.body-bottom-text-title {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 1em;
+}
+
+.body-bottom-text-summary {
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    letter-spacing: 0.011em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #86868b;
+}
 
 /* footer */
-footer{
-    
-}
+footer {}
