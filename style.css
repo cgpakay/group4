@@ -53,21 +53,19 @@ header .right{
     justify-content: space-around;
 }
 
-
 header ul{
     display: inline;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 header ul li{
     list-style: none;
     justify-content: space-between;
     min-width: 5rem;
+    align-items: center;
 }
 
 header ul li a{
