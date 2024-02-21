@@ -146,6 +146,151 @@ header .download-button {
 }
 
 
+/* footer */
+
+
+footer {
+    background-color: #F5F5F7;
+    color: #1d1e20;
+    padding: 40px 0;
+    
+}
+
+.div-footer-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.footer-section1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-container1 {
+    display: flex;
+}
+
+.div-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.cards {
+    flex: 1;
+    text-align: center;
+}
+
+.cards-content {
+    padding: 20px;
+}
+
+.cards svg {
+    width: 48px;
+    height: 48px;
+    fill: #86868B;
+}
+
+.card-content-p1{
+    color: #1D1D1F;
+    font-weight: bold;
+}
+.card-content-p2,
+.card-content-p3 {
+    color: #a8a8a8;
+    margin: 10px 0;
+}
+
+.card-content-p3 a {
+    text-decoration: none;
+    
+}
+
+.footer-section2 {
+    display: block;
+    justify-content: space-between;
+}
+
+.div-section2-container1,
+.div-section2-container2 {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.road-map {
+    flex: 1;
+    color: #a8a8a8;
+}
+
+.road-map a {
+    text-decoration: none;
+}
+
+.section2-mode-button {
+    display: flex;
+    gap: 10px;
+}
+
+.section2-mode-button label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section2-mode-button input[type="radio"] {
+    display: none;
+}
+
+.section2-mode-button div {
+    color: #a8a8a8;
+}
+
+.div-section2-container2 {
+justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+    color: #a8a8a8;
+}
+
+.left-side a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
+.right-side a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-section1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-container1 {
+        flex-direction: column;
+    }
+
+    .div-cards {
+        flex-direction: column;
+    }
+
+    .section2-mode-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+=======
 @media only screen and (max-width: 1068px) {
     .title-text {
         width: 100%;
@@ -267,5 +412,4 @@ header .download-button {
     color: #86868b;
 }
 
-/* footer */
-footer {}
+
