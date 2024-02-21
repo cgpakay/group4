@@ -37,6 +37,17 @@ header .container {
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 1068px) {
+    header .container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+
+
 header .left {
     width: 10%;
     display: flex;
@@ -59,21 +70,15 @@ header text {
     margin-left: 10px;
 }
 
-header .menu {
-    width: 400px;
-    float: right;
-    height: 70px;
-    display: flex;
-}
-
 header .right {
     display: flex;
-    width: 40%;
+    width: 80%;
     flex-direction: row;
-    justify-content: space-around;
+    align-content: end;
+    justify-content: end;
 }
 
-header .center-menu{
+header .center-menu {
     display: flex;
     flex-direction: row;
 }
@@ -85,14 +90,13 @@ header ul {
     justify-content: space-between;
     align-items: center;
 
-
 }
 
 header ul li {
     text-align: center;
     list-style: none;
-    justify-content: space-between;
-    min-width: 5rem;
+    justify-content: space-around;
+
 }
 
 header ul li a {
@@ -100,7 +104,7 @@ header ul li a {
     min-width: 100%;
     color: black;
     justify-content: space-between;
-
+    margin: 0.5em;
 }
 
 header button {
@@ -125,6 +129,7 @@ header .download-button {
 
 .title-text {
     width: 60%;
+    height: auto;
     font-size: 64px;
     line-height: 1.0625;
     font-weight: 600;
@@ -138,167 +143,21 @@ header .download-button {
     text-align: center;
     position: relative;
     display: block;
-    /* or inline-block */
     text-overflow: ellipsis;
     word-wrap: break-word;
     overflow: hidden;
-    max-height: 3.6em;
 }
 
 
-/* footer */
-
-
-footer {
-    background-color: #F5F5F7;
-    color: #1d1e20;
-    padding: 40px 0;
-    
-}
-
-.div-footer-1 {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10rem;
-    margin-right: 10rem;
-}
-
-.footer-section1 {
-    display: flex;
-    justify-content: space-around;
-}
-
-.div-container1 {
-    display: flex;
-}
-
-.div-cards {
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-}
-
-.cards {
-    flex: 1;
-    text-align: center;
-}
-
-.cards-content {
-    padding: 20px;
-}
-
-.cards svg {
-    width: 48px;
-    height: 48px;
-    fill: #86868B;
-}
-
-.card-content-p1{
-    color: #1D1D1F;
-    font-weight: bold;
-}
-.card-content-p2,
-.card-content-p3 {
-    color: #a8a8a8;
-    margin: 10px 0;
-}
-
-.card-content-p3 a {
-    text-decoration: none;
-    
-}
-
-.footer-section2 {
-    display: block;
-    justify-content: space-between;
-}
-
-.div-section2-container1,
-.div-section2-container2 {
-    display: flex;
-    align-items: center;
-    margin-top: 2em;
-}
-
-.road-map {
-    flex: 1;
-    color: #a8a8a8;
-}
-
-.road-map a {
-    text-decoration: none;
-}
-
-.section2-mode-button {
-    display: flex;
-    gap: 10px;
-}
-
-.section2-mode-button label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.section2-mode-button input[type="radio"] {
-    display: none;
-}
-
-.section2-mode-button div {
-    color: #a8a8a8;
-}
-
-.div-section2-container2 {
-justify-content: space-between;
-}
-
-.left-side,
-.right-side {
-    color: #a8a8a8;
-}
-
-.left-side a {
-    color: #a8a8a8;
-    text-decoration: none;
-}
-
-.right-side a {
-    color: #a8a8a8;
-    text-decoration: none;
-}
-
-@media screen and (max-width: 768px) {
-    footer {
-        padding: 20px 0;
-    }
-
-    .footer-section1 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .div-container1 {
-        flex-direction: column;
-    }
-
-    .div-cards {
-        flex-direction: column;
-    }
-
-    .section2-mode-button {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-=======
 @media only screen and (max-width: 1068px) {
     .title-text {
         width: 100%;
+        height: auto;
         font-size: 48px;
         line-height: 1.08349;
         letter-spacing: -0.003em;
         font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        margin-bottom: 2em;
+        margin-bottom: 0.5em;
     }
 }
 
@@ -353,8 +212,15 @@ justify-content: space-between;
 }
 
 .image-size {
-    width: 60%;
+    width: 70%;
     height: auto;
+}
+
+@media only screen and (max-width: 1068px) {
+    .image-size {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .note-box {
@@ -412,4 +278,148 @@ justify-content: space-between;
     color: #86868b;
 }
 
+/* footer */
 
+
+footer {
+    background-color: #F5F5F7;
+    color: #1d1e20;
+    padding: 40px 0;
+
+}
+
+.div-footer-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.footer-section1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-container1 {
+    display: flex;
+}
+
+.div-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.cards {
+    flex: 1;
+    text-align: center;
+}
+
+.cards-content {
+    padding: 20px;
+}
+
+.cards svg {
+    width: 48px;
+    height: 48px;
+    fill: #86868B;
+}
+
+.card-content-p1 {
+    color: #1D1D1F;
+    font-weight: bold;
+}
+
+.card-content-p2,
+.card-content-p3 {
+    color: #a8a8a8;
+    margin: 10px 0;
+}
+
+.card-content-p3 a {
+    text-decoration: none;
+
+}
+
+.footer-section2 {
+    display: block;
+    justify-content: space-between;
+}
+
+.div-section2-container1,
+.div-section2-container2 {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.road-map {
+    flex: 1;
+    color: #a8a8a8;
+}
+
+.road-map a {
+    text-decoration: none;
+}
+
+.section2-mode-button {
+    display: flex;
+    gap: 10px;
+}
+
+.section2-mode-button label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section2-mode-button input[type="radio"] {
+    display: none;
+}
+
+.section2-mode-button div {
+    color: #a8a8a8;
+}
+
+.div-section2-container2 {
+    justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+    color: #a8a8a8;
+}
+
+.left-side a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
+.right-side a {
+    color: #a8a8a8;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 20px 0;
+    }
+
+    .footer-section1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-container1 {
+        flex-direction: column;
+    }
+
+    .div-cards {
+        flex-direction: column;
+    }
+
+    .section2-mode-button {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
